@@ -5,14 +5,17 @@ const rl = readline.createInterface({
   output: process.stdout
 });
 
+//AN ARRAY THAT HOUSES ALL ANSWERS
 const answersArr = [];
 
+//FUNCTION THAT RETURNS A PARAGRAPH WITH EACH ANSWER EMBEDDED
 const generatedProfile = function() {
   setTimeout(() => {
     console.log(`\n${answersArr[0]} loves listening to ${answersArr[2]} while ${answersArr[1]}, devouring ${answersArr[4]} for ${answersArr[3]}, prefers ${answersArr[5]} over any other sport, and is amazing at ${answersArr[6]}. `);
   }, 1700);
 };
 
+// SPINNER FUNCTION FROM PREVIOUS EXERCISE (JUST FOR FUN)
 const spinner = (action) => {
   const animation = "|/-\\|/-\\|";
   let timer = 100;
